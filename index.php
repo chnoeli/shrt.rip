@@ -29,6 +29,18 @@
         echo $shortUrl;
         echo "<br>";
 
+        require_once("db.php");
+        DB::$host = DB_HOST;
+        DB::$user = DB_USER;
+        DB::$password = DB_PASSWORD;
+        DB::$dbName = DB_NAME;
+        
+        DB::insert('data', [
+            'longUrl' => $longUrl,
+            'shortUrl' => $shortUrl,
+            'creationDate' => $creationDate,
+            'expirationDate' => $expirationDate
+          ]);
         
 
 

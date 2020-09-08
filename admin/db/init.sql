@@ -18,16 +18,19 @@ USE `urlshortener`;
 
 -- Exportiere Struktur von Tabelle urlshortener.data
 CREATE TABLE IF NOT EXISTS `data` (
-  `id_data` int(11) NOT NULL,
+  `id_data` int(11) NOT NULL AUTO_INCREMENT,
   `longUrl` varchar(2000) NOT NULL,
   `shortUrl` varchar(2000) NOT NULL,
   `creationDate` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `expirationDate` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id_data`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 -- Exportiere Daten aus Tabelle urlshortener.data: ~0 rows (ungefähr)
 /*!40000 ALTER TABLE `data` DISABLE KEYS */;
+INSERT INTO `data` (`id_data`, `longUrl`, `shortUrl`, `creationDate`, `expirationDate`) VALUES
+	(1, 'test', 'zb2qCYad', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+	(2, 'kgol', 'MQ6oqBvf', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 /*!40000 ALTER TABLE `data` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
