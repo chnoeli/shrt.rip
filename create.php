@@ -15,7 +15,7 @@
             
             do{
                 $shortUrl = random_str(SHORTURL_LENGTH);   
-            }while(DB::queryFirstField("SELECT shortUrl FROM `DATA` WHERE shortUrl=%s", $shortUrl) != NULL);
+            }while(DB::queryFirstField("SELECT shortUrl FROM `data` WHERE shortUrl=%s", $shortUrl) != NULL);
                                  
             
             //TODO Add Timezone according to user
