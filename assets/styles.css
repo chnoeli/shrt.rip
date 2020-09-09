@@ -1,0 +1,21 @@
+:root{    
+    --background-color: #3D302E;
+    --background-color-secondary: #A4543B;
+    --foreground-color: #F0EAE0;
+    --accent-color: #7C969E;
+    --accent-color-secondary: #E17137;    
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.wrapper{
+    background-color: var(--background-color-secondary);
+    width: 40vw;
+}
+
+a, a:link, a:visited{
+    color: var(--accent-color);
+}
+
