@@ -19,3 +19,10 @@ a, a:link, a:visited{
     color: var(--accent-color);
 }
 
+@media screen and (max-width: 1116px)
+{
+    .wrapper{
+        background-color: var(--background-color-secondary);
+        width: 100vw;
+    }
+}
