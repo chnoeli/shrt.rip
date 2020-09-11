@@ -3,7 +3,8 @@ function createUrl() {
     var longUrl = elem.value;    
     if(longUrl != "")
     {
-        if (!longUrl.startsWith("http://")||!longUrl.startsWith("https://")) {
+        if (!longUrl.startsWith("http://")&&!longUrl.startsWith("https://")) {
+		console.log("logurl")
             longUrl = "http://" + longUrl
             elem.value = longUrl;
         }
