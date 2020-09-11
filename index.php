@@ -50,7 +50,7 @@
     </div>    
     <script>        
         currentYear = new Date().getFullYear();
-        if(currentYear != "2021")
+        if(currentYear != "2020")
         {
             document.getElementById("copyrightYear").innerHTML = " - "+currentYear;
         }
