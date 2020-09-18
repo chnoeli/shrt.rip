@@ -18,4 +18,5 @@
           }
           copy(SHORTURL_PATH."/.htaccess", SHORTURL_PATH."/.htaccess_back");
           file_put_contents(SHORTURL_PATH."/.htaccess", $content);
+        DB::disconnect();
 ?>
