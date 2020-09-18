@@ -50,7 +50,7 @@
         else {
             echo '{ "error": { "code": "300", "value": "invalid url"} }';
         }
-
+        DB::disconnect();
         include_once('update.php');            
     }
     elseif (empty($_POST["longUrl"])) {
