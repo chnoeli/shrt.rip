@@ -15,6 +15,9 @@
     define("DB_USER", "root");
     //Database Password
     define("DB_PASSWORD", "");
-
+    //Random keyspace
+    define("KEYSPACE", "0123456789abcdefghiklmnopqrstuvwxyz");
+    //Random passphrase to have a little more control on the forwarding.php file. Just take any random String.
+    define("FORWARD_PROTECTOR", "")
 
 ?>
