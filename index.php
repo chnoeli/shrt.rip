@@ -1,5 +1,5 @@
 <?php
-    include_once("init.php");
+include_once("init.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,21 +8,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/mini-default.min.css">
+    <link rel="stylesheet" href="assets/mini.css">
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/functions.js"></script>
     <script src="assets/clipboard.min.js"></script>
-    <title>Urlshortener</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>shrt.rip</title>
 </head>
 
 <body>
     <div class="container wrapper">
         <div class="row">
-            <h1 class="col-sm">URL Shortener <small>Tool for shortening URLs</small></h1>
+            <h1 class="col-sm">shrt.rip<small>Lets make it shorter...</small></h1>
         </div>
 
         <div class="row">
-            <input autocomplete="off" type="text" name="longUrl" class="col-sm" id="longUrlInput" tabindex="1">
+            <input autocomplete="off" autofocus type="text" name="longUrl" class="col-sm" id="longUrlInput" tabindex="1">
             <a class="button" onclick="createUrl()" id="submitLongUrl" tabindex="2">Submit</a>
 
         </div>
@@ -33,7 +34,11 @@
             </div>
         </div>
         <footer>
-            <p>© 2020 <span id="copyrightYear"></span> <a href="https://noel-stammbach.ch" class="footerLink">Noel Stammbach</a> | <label for="modal-about">About</label> | <label for="modal-disclaimer">Disclaimer</label></p>
+            <p>© 2020 <span id="copyrightYear"></span> <a href="https://noel-stammbach.ch" class="footerLink">Noel Stammbach</a> |
+                <label class="hover" for="modal-about">About</label> |
+                <a href="https://github.com/chnoeli/urlshortener" class="footerLink">Github</a> |
+                <label class="hover" for="modal-disclaimer">Disclaimer</label>
+            </p>
         </footer>
 
         <input type="checkbox" id="modal-about" class="modal">

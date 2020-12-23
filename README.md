@@ -7,7 +7,6 @@ If you like it [buy me a beer](https://www.buymeacoffee.com/nost).
 
 
 # How to Use
-
 1. Clone Repository ``git clone https://github.com/chnoeli/urlshortener``
 2. Prepare a Database and Database User.
 3. Copy ``config-sample.php`` to ``config.php`` and adjust variables according to your needs.
