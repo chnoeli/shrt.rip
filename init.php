@@ -29,7 +29,7 @@ if (!file_exists(SHORTURL_PATH."/.htaccess")) {
     if (!file_exists(SHORTURL_PATH)) {
         mkdir(SHORTURL_PATH);
     }
-    $content = "RewriteEngine On\nRewriteRule (.*) ".SHORTURL_LOCATION."forwarder.php?protector=".FORWARD_PROTECTOR."&shortUrl=$1";
+    $content = "RewriteEngine On\nRewriteRule (.*) /".SHORTURL_LOCATION."/forwarder.php?protector=".FORWARD_PROTECTOR."&shortUrl=$1";
     file_put_contents(SHORTURL_PATH."/.htaccess", $content);
 }
 
